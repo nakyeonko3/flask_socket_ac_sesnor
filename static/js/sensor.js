@@ -1,4 +1,4 @@
-const getSensorDate = () => {
+const getSensorData = () => {
   return fetch('/getSensorData')
     .then((response) => response.json())
     .then((data) => data.sensor_data);
@@ -33,7 +33,7 @@ const getSensorDate = () => {
               chart.data.datasets.forEach(async (dataset) => {
                 dataset.data.push({
                   x: Date.now(),
-                  y: await getSensorDate(),
+                  y: await getSensorData(),
                 });
               });
             },

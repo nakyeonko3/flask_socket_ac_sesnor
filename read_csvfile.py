@@ -12,7 +12,7 @@ def get_date_last_value():
     df = pd.read_csv('sensor.csv')
     last_Date = df['Date'].values[-1]
     return int(last_Date) 
-    #csv file 마지막 줄의 Sensor 값을 가져옴
+    #csv file 마지막 줄의 Date 값을 가져옴
 
 
 def get_last_line():
