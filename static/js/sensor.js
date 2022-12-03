@@ -1,9 +1,3 @@
-const getSensorData = () => {
-  return fetch('/getSensorData')
-    .then((response) => response.json())
-    .then((data) => data.sensor_data);
-};
-
 (async () => {
   const data = {
     labels: [],
@@ -46,14 +40,14 @@ const getSensorData = () => {
 
   const myChart = new Chart(document.getElementById('myChart'), config);
 
-  document
-    .getElementById('pause_button')
-    .addEventListener('click', async () => {
-      if (myChart.options.plugins.streaming.pause === false) {
-        myChart.options.plugins.streaming.pause = true;
-      } else {
-        myChart.options.plugins.streaming.pause = false;
-      }
-      // myChart.update({ delay: 0 });
-    });
+  // document
+  //   .getElementById('pause_button')
+  //   .addEventListener('click', async () => {
+  //     if (myChart.options.plugins.streaming.pause === false) {
+  //       myChart.options.plugins.streaming.pause = true;
+  //     } else {
+  //       myChart.options.plugins.streaming.pause = false;
+  //     }
+  //     // myChart.update({ delay: 0 });
+  //   });
 })();
