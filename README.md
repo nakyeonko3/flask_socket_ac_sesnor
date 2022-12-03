@@ -1,4 +1,4 @@
-# flask_socke_ac_sensor
+# flask_socket_ac_sensor
 
 ## 기능
 아두이노에 부착된 ac센서를
