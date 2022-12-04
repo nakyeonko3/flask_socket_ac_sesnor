@@ -8,8 +8,12 @@ html {
   background-size: cover;
 }
 
-body {
+/* body {
   font-family: 'Nanum Pen Script', cursive;
+} */
+
+body {
+  font-family: 'Malgun Gothic', '굴림', 'Gulim', 'Arial';
 }
 
 .flex-start {
@@ -28,7 +32,8 @@ body {
 }
 
 .text-size-big {
-  font-size: 4.5em;
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 .text-size-medium {
@@ -36,7 +41,8 @@ body {
 }
 
 .text-size-small {
-  font-size: 1.5em;
+  font-size: 1em;
+  color: rgba(1, 1, 1, 0.3);
 }
 
 .chart-size {
@@ -47,14 +53,7 @@ body {
 }
 
 .text-size-ac-value {
-  font-size: 4em;
-}
-
-#w {
-  font-size: 3em;
-}
-#s {
-  font-size: 2.1em;
+  font-size: 2em;
 }
 
 section {

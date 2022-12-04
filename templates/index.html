@@ -22,7 +22,7 @@
         <div><span class="text-size-big">Smart Plug System</span></div>
         <div>
           <span class="sensor_data text-size-ac-value"></span>
-          <span id="w">W</span><span id="s">s</span>
+          <span class="text-size-ac-value">ws</span></span>
         </div>
         <div>
           <span class="date text-size-small"></span>
@@ -30,8 +30,9 @@
         <div class="chart-size">
           <canvas id="myChart"></canvas>
         </div>
+        <div><button id="turnoff">turn off</button></div>
       </section>
-      <section class="flex-center">
+      <!-- <section class="flex-center">
         <div>
           <span class="text-size-big"
             >라즈베리파이를 이용한 전력제어 스마트 플러그</span
@@ -42,15 +43,16 @@
             >고낙연, 김대익, 김정원, 김학산, 남기문, 조인기, 류찬명</span
           >
         </div>
-      </section>
+      </section> -->
       <div>
         <!-- <form class="submit_form">
           <input type="submit" value="submit" />
         </form> -->
       </div>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/relay_controll.js') }}"></script>
     <script src="{{ url_for('static', filename='js/sensor.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/using.js') }}"></script>
   </body>
 </html>

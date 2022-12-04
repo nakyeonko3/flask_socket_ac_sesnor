@@ -3,7 +3,7 @@ console.log('hello world');
 const submit_form = document.querySelector('.submit_form');
 const sensor_data_span = document.querySelector('.sensor_data');
 const date_span = document.querySelector('.date');
-
+let data = 0;
 const init = () => {
   setInterval(renderSensorData, 1000);
   setInterval(renderNotDateTime, 1000);
@@ -21,7 +21,12 @@ const getSensorData = () => {
 };
 
 const renderSensorData = async () => {
-  sensor_data_span.innerText = await getSensorData();
+  data = await getSensorData();
+  sensor_data_span.innerText = data;
+  data = parseInt(data);
+  if (data >= 10000) {
+    console.log("드라이기 사용중");
+  }
 };
 
 const getNowDateTime = () => {
