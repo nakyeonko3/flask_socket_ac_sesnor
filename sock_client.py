@@ -9,7 +9,8 @@ import socket
 import time
 
 port = 8888
-address = ("192.168.1.114", port)
+address = ("192.168.9.218", port)
+# address = ("192.168.1.114", port)
 BUFSIZE = 512
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
